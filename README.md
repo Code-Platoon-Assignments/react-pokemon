@@ -8,13 +8,24 @@ In this assignment, you will build a web application using the Vite + React deve
 
 ### Task 1: Setup Your Development Environment
 
-1. Set up your development environment with Vite and React. Install Vite and create a new React project using the following commands:
+1. Set up your development environment with Vite and React. Install Vite and create a new React project using the following commands (Vite needs Node 20.19+ or 22.12+; the devcontainer uses Node 24):
 
    ```bash
-   npm create-vite
+   npm create vite@latest pokemon-theme-team -- --template react
    ```
 
-2. Navigate to your project directory and ensure that your development environment is ready to start building the application.
+   When it asks *Install with npm and start now?*, choose **No** (use the arrow keys); you will run those steps yourself below.
+
+2. Navigate to your project directory, install the dependencies (including Axios) and start the dev server to make sure your development environment is ready to start building the application:
+
+   ```bash
+   cd pokemon-theme-team
+   npm install
+   npm install axios
+   npm run dev
+   ```
+
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ### Task 2: Create the User Interface
 
